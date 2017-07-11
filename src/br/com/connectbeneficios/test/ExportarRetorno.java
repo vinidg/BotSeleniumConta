@@ -228,6 +228,7 @@ public class ExportarRetorno {
 							System.out.println("linha " + numero_linha + " | coluna " + numero_coluna + " | Texto "
 									+ tdE.getText() + "\n");
 							tdE.click();
+							System.out.println("==== Arquivo salvo em " + downloadFilepath + " ====");
 							Thread.sleep(5000);
 							return;
 						}
@@ -237,7 +238,6 @@ public class ExportarRetorno {
 				numero_linha++;
 			}
 
-			System.out.println("==== Arquivo salvo em " + downloadFilepath + " ====");
 
 			driver.quit();
 			String verificationErrorString = verificationErrors.toString();
