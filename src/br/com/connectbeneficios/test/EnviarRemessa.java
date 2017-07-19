@@ -89,13 +89,15 @@ public class EnviarRemessa {
 		driver.findElement(By.id("btn-continuar")).click();
 
 		driver.findElement(By.id("fecharTourElements")).click();
-		driver.findElement(By.cssSelector("button.mfp-close")).click();
+//		driver.findElement(By.cssSelector("button.mfp-close")).click();
 		System.out.println("==== Acessando Transmissão de arquivos ====");
 		WebElement element = driver.findElement(By.linkText("menu"));
 		builder.moveToElement(element).build().perform();
 
 		driver.findElement(By.linkText("Transmissão de arquivos")).click();
 		Thread.sleep(2000);
+		
+		//TODO VERIFICAR SE EXISTE JA O MESMO ARQUIVO
 
 		driver.findElement(By.linkText("Enviar")).click();
 
