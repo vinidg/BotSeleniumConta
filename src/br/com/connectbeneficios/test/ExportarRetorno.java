@@ -185,7 +185,7 @@ public class ExportarRetorno {
 			driver.findElement(By.id("btn-continuar")).click();
 
 			driver.findElement(By.id("fecharTourElements")).click();
-			driver.findElement(By.cssSelector("button.mfp-close")).click();
+//			driver.findElement(By.cssSelector("button.mfp-close")).click();
 			System.out.println("==== Acessando Transfêrencia de arquivos ====");
 
 			WebElement element = driver.findElement(By.linkText("menu"));
